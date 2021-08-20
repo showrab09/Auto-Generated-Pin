@@ -16,12 +16,18 @@
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input id="display-pin" class="form-control" type="text">
+                       
                     <button onclick="generatePin()" class="generate-btn">Generate Pin</button>
+                    <div class="notify-section">
+                <p id="notify-fail" class="notify">❌ Pin Didn't Match, Please try again</p>
+                <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+                       </div>
                 </div>
+                
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="typed-numbers" class="form-control" type="text">
+                    <input id="typed-numbers" class="form-control " type="text" required>
                     <div class="numbers">
                         <div id="key-pad" class="calc-body">
                             <div class="calc-button-row">
@@ -52,10 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="notify-section">
-                <p id="notify-fail" class="notify">❌ Pin Didn't Match, Please try again</p>
-                <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
-            </div>
+         
         </div>
         <script src="app.js"></script>
 </body>
